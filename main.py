@@ -17,3 +17,12 @@ canvas_color =input("enter canvas color(white or black)")
 
 #create a canvas with the user data
 canvas =Canvas(height=canvas_height,width=canvas_width,color=colors[canvas_color])
+
+while True:
+    shape_type= input("What do you like to draw? Enter quit to quit. ")
+    #ask for rectangle data and create rectangle if user entered rectangle
+    if shape_type.lower()=="rectangle":
+        rec_x= int(input("Enter x of the rectangle: "))
+        rec_y = int(input("Enter y of the rectangle: "))
+        rec_width =int(input("Enter the width of the rectangle: "))
+        rec_height =int(input("Enter the heigth of the rectangle: "))
