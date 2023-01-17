@@ -26,3 +26,25 @@ while True:
         rec_y = int(input("Enter y of the rectangle: "))
         rec_width =int(input("Enter the width of the rectangle: "))
         rec_height =int(input("Enter the heigth of the rectangle: "))
+        red= int(input("How much red should the rectangle have? "))
+        green = int(input("How much green? "))
+        blue = int(input("How much blue? "))
+
+        #create rectangle
+        r1 = Rectangle(x=rec_x, y= rec_y, height=rec_height, width=rec_width, color=(red,green,blue))
+        r1.draw(canvas)
+
+    if shape_type.lower()=="square":
+        sqr_x =int(input("Enter x of the square: "))
+        sqr_y =int(input("Enter y of the square: "))
+        sqr_side = int(input("Enter the side length of the square: "))
+        red=int(input("How much red should the square have? "))
+        green = int(input("How much green? "))
+        blue = int(input("how much blue? "))
+        s1 = Square(x=sqr_x, y=sqr_y,side=sqr_side,color=(red, green, blue))
+        s1.draw(canvas)
+
+    if shape_type.lower() =="quit":
+        break
+canvas.make('canvas.png')
+
